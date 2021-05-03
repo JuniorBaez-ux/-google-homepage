@@ -1,11 +1,75 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <style>
+        h1{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 45px;
+        }
+        html{
+            background-color: rgb(255, 255, 255);
+            display: grid;
+        }
+        ul{
+            list-style-type: none;
+        }
+        form{
+        background-color: #e7dfdf;
+        width: 300px;
+        height: 44px;
+        border-radius: 10px;
+        border-color: gray;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+        input {
+        all: unset;
+        font: 16px system-ui;
+        color: rgb(0, 0, 0);
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+        }
+        button {
+        all: unset;
+        cursor: pointer;
+        width: 44px;
+        height: 44px;
+        }
+        svg {
+        color: #fff;
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+        }
+        #gmail{
+        color: rgba(0, 0, 0, 0.87);
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+        #imagenes{
+            color: rgba(0, 0, 0, 0.87);
+        }        
+    </style>
 <meta charset="utf-8">
-<title>Basic Page Structure</title>
+<title>Google example page</title>
 </head>
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="A logo of the Google company">
-    <form action="search">search</form>
+    <h1>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="A logo of the Google company">
+    </h1>
+  
+        <form id="form">
+            <input type="text" id="query" name="q">
+            <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+        </form>
+  
+    <ul>
+        <li><a href="https://www.google.com/intl/es-419/gmail/about/#" id="gmail">Gmail</a></li>
+        <li><a href="https://www.google.com.do/imghp?hl=es-419&ogbl" id="imagenes">Imagenes</a></li>
+      </ul>
 </body>
 </html>
